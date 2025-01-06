@@ -1,0 +1,22 @@
+100: true
+browser: false
+ts: false
+jsx: false
+jobs: 2
+check-coverage: true
+nyc-arg:
+- --all=true
+- --exclude=test/
+- --exclude=tools/
+- --exclude=coverage/
+- --exclude=.worktrees/
+coverage-report:
+- text
+- text-summary
+- json
+- html
+output-file: .tap
+timeout: 90
+files:
+- test/integration/
+- test/unit/

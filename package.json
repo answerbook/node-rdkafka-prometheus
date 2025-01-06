@@ -4,13 +4,15 @@
   "description": "Helper for exposing node-rdkafka statistics through prometheus",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
     "prepublish": "npm run lint",
-    "test": "mocha test/**/*.spec.js"
+    "lint": "eslint ./",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "docker-compose -p node-rdkafka-stats -f compose/base.yaml -f compose/dev.yaml up --always-recreate-deps --remove-orphans -d",
+    "tap": "tap"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Collaborne/node-rdkafka-prometheus.git"
+    "url": "git+https://github.com/answerbook/node-rdkafka-prometheus.git"
   },
   "keywords": [
     "node-rdkafka",
@@ -20,20 +22,34 @@
     "monitoring",
     "statistics"
   ],
-  "author": "Andreas Kohn <andreas.kohn@gmail.com>",
+  "author": "Phil Ciampini <phil.ciampini@mezmo.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Collaborne/node-rdkafka-prometheus/issues"
+    "url": "https://github.com/answerbook/node-rdkafka-prometheus/issues"
   },
-  "homepage": "https://github.com/Collaborne/node-rdkafka-prometheus#readme",
+  "homepage": "https://github.com/answerbook/node-rdkafka-prometheus#readme",
   "dependencies": {
     "@log4js-node/log4js-api": "^1.0.0",
     "prom-client": "^12.0.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^5.16.0",
-    "eslint-config-collaborne": "^1.5.0",
-    "mocha": "^5.0.1"
+    "@logdna/setup-chain": "^1.3.2",
+    "eslint": "^7.32.0",
+    "eslint-config-logdna": "^7.0.3",
+    "node-rdkafka": "^2.18.0",
+    "tap": "^16.3.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "logdna"
+    ],
+    "ignorePatterns": [
+      "node_modules/",
+      "coverage/"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    }
   }
 }

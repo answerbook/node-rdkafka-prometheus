@@ -1,0 +1,7 @@
+services:
+
+  kafka:
+    image: bitnami/kafka:3.4.1
+
+  zookeeper:
+    image: bitnami/zookeeper:3.7.2

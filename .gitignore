@@ -1,9 +1,32 @@
-/node_modules/
+# test artifacts
+.nyc_output
+coverage/
+lib-cov
+*.lcov
+.tap
+.tap-*
+output
+tmp
 
-*.orig
-*.rej
-*.porig
+# IDE files
+.idea
+*.swp
+*.vim
+.vscode
 
-npm-shrinkwrap.json
-package-lock.json
-yarn.lock
+# dev files
+*.save
+*.tgz
+.npm
+.eslintcache/
+.node_repl_history
+node_modules/
+npm-debug.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+.DS_Store
+

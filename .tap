@@ -1,0 +1,102 @@
+TAP version 13
+# Subtest: test/integration/index.js
+    # Subtest: integration
+        # Subtest: get stats
+            ok 1 - should be equivalent
+            1..1
+        ok 1 - get stats # time=1668.921ms
+        
+        1..1
+    ok 1 - integration # time=3192.136ms
+    
+    1..1
+    # time=3194.885ms
+ok 1 - test/integration/index.js # time=3194.885ms
+
+# Subtest: test/unit/index.js
+    # Subtest: metrics
+        # Subtest: things should be the same name
+            ok 1 - should be equivalent
+            ok 2 - should be equivalent
+            ok 3 - should be equivalent
+            ok 4 - should be equivalent
+            ok 5 - should be equivalent
+            ok 6 - should be equivalent
+            ok 7 - should be equivalent
+            ok 8 - should be equivalent
+            ok 9 - should be equivalent
+            ok 10 - should be equivalent
+            ok 11 - should be equivalent
+            ok 12 - should be equivalent
+            ok 13 - should be equivalent
+            ok 14 - should be equivalent
+            ok 15 - should be equivalent
+            ok 16 - should be equivalent
+            ok 17 - should be equivalent
+            ok 18 - should be equivalent
+            ok 19 - should be equivalent
+            ok 20 - should be equivalent
+            ok 21 - should be equivalent
+            ok 22 - should be equivalent
+            ok 23 - should be equivalent
+            ok 24 - should be equivalent
+            ok 25 - should be equivalent
+            ok 26 - should be equivalent
+            ok 27 - should be equivalent
+            ok 28 - should be equivalent
+            ok 29 - should be equivalent
+            ok 30 - should be equivalent
+            ok 31 - should be equivalent
+            ok 32 - should be equivalent
+            ok 33 - should be equivalent
+            ok 34 - should be equivalent
+            ok 35 - should be equivalent
+            ok 36 - should be equivalent
+            ok 37 - should be equivalent
+            ok 38 - should be equivalent
+            ok 39 - should be equivalent
+            ok 40 - should be equivalent
+            ok 41 - should be equivalent
+            ok 42 - should be equivalent
+            ok 43 - should be equivalent
+            ok 44 - should be equivalent
+            ok 45 - should be equivalent
+            ok 46 - should be equivalent
+            ok 47 - should be equivalent
+            ok 48 - should be equivalent
+            ok 49 - should be equivalent
+            ok 50 - should be equivalent
+            ok 51 - should be equivalent
+            ok 52 - should be equivalent
+            ok 53 - should be equivalent
+            ok 54 - should be equivalent
+            ok 55 - should be equivalent
+            ok 56 - should be equivalent
+            ok 57 - should be equivalent
+            ok 58 - should be equivalent
+            ok 59 - should be equivalent
+            ok 60 - should be equivalent
+            ok 61 - should be equivalent
+            ok 62 - should be equivalent
+            ok 63 - should be equivalent
+            ok 64 - should be equivalent
+            ok 65 - should be equivalent
+            ok 66 - should be equivalent
+            ok 67 - should be equivalent
+            ok 68 - should be equivalent
+            ok 69 - should be equivalent
+            ok 70 - should be equivalent
+            ok 71 - should be equivalent
+            ok 72 - expect truthy value
+            1..72
+        ok 1 - things should be the same name # time=6.213ms
+        
+        1..1
+    ok 1 - metrics # time=8.412ms
+    
+    1..1
+    # time=9.291ms
+ok 2 - test/unit/index.js # time=9.291ms
+
+1..2
+# time=3600.61ms
